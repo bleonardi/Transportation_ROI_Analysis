@@ -1,0 +1,11 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Transportation ROI Analysis: OKI Region"
+
+format:
+  html:
+    theme: flatly
+    toc: true

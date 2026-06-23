@@ -7,5 +7,5 @@ website:
 
 format:
   html:
-    theme: flatly
+    theme: [flatly, assets/custom.scss]
     toc: true

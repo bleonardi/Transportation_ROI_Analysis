@@ -3,9 +3,7 @@ title: "Transportation ROI Analysis: OKI Region"
 author: "Benedict Leonardi"
 ---
 
-This analysis has been integrated into the [Sprawl Paradox](https://bleonardi.github.io/True_Urban_Ranking_Project/fiscal_roi.html) project, where it serves as the fiscal case study connecting density-based city measurement to public investment allocation.
-
-The core finding: urban tracts in the 8-county OKI region generate roughly **17× more property tax revenue per acre** than sprawl-classified tracts, yet receive less federal transportation investment per acre — a structural cross-subsidy flowing from dense cores to low-density peripheries.
+This analysis has been integrated into the [Sprawl Paradox](https://bleonardi.github.io/True_Urban_Ranking_Project/fiscal_roi.html) project.
 
 [View the full analysis →](https://bleonardi.github.io/True_Urban_Ranking_Project/fiscal_roi.html)
 
@@ -29,10 +27,6 @@ map_data <- tracts %>% inner_join(results, by = "GEOID")
 ```
 
 ### Key Findings
-
-- **Urban Productivity:** Urban tracts generate **`r dollar(summary$Avg_Revenue_Per_Acre[3])`** in estimated property tax revenue per acre, nearly **17x** more than sprawl areas.
-- **Investment Disparity:** Suburban areas receive the highest federal investment per acre (**`r dollar(summary$Avg_Fed_Invest_Per_Acre[2])`**), while urban areas receive significantly less (**`r dollar(summary$Avg_Fed_Invest_Per_Acre[3])`**).
-- **Subsidized Sprawl:** Low-density areas have the lowest net fiscal impact, yet consume infrastructure that creates long-term maintenance liabilities.
 
 ### Fiscal Productivity by Density Class
 
